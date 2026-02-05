@@ -1,25 +1,16 @@
-# Traffic Light Controller – Verilog
+# Traffic Light Controller (Verilog)
 
-## Overview
-FSM-based traffic light controller implemented in Verilog HDL.
+This project implements an FSM-based traffic light controller in SystemVerilog.
+It supports a pedestrian request button and a countdown timer.
 
 ## Features
-- Red, Yellow, Green light control
-- Pedestrian request button with latch
-- Safe pedestrian crossing during red light
-- Verified using a dedicated testbench
-- Simulated using EDA Playground
+- FSM-based traffic light control
+- Pedestrian request button
+- Countdown timer (5 → 0)
+- Verified using EDA Playground waveforms
 
-## Folder Structure
-rtl/ - RTL design  
-tb/  - Testbench  
+## Pedestrian Countdown Verification
 
-## How It Works
-The controller cycles through:
-RED → GREEN → YELLOW → RED
+The waveform below shows the pedestrian walk signal and countdown timer.
 
-If a pedestrian presses the button, the request is latched and served safely during the red phase.
-
-## Author
-Sampurna Raychaudhuri
-
+![Pedestrian Countdown](docs/waveform_pedestrian_countdown.png)
