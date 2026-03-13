@@ -1,5 +1,4 @@
-// Code your testbench here
-// or browse Examples
+
 `timescale 1ns/1ps
 
 module tb_traffic_light_controller;
@@ -45,7 +44,7 @@ module tb_traffic_light_controller;
         ped_req = 1;
         #10 ped_req = 0;
 
-        // Observe full countdown
+        // full countdown
         #200;
 
         $display("Simulation Finished");
