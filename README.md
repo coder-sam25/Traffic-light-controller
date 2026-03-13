@@ -161,8 +161,6 @@ typedef enum logic [1:0] {
 
 ---
 
-# Author
-
 SystemVerilog Traffic Light Controller with Pedestrian Crossing — designed for **FSM learning and hardware simulation**.
 
 ## Pedestrian Countdown Verification
